@@ -2704,7 +2704,7 @@ h6 {
   padding-top: 80px; }
 
 .made_life_text .col-lg-6 {
-  vertical-align: middle;
+  vertical-align: baseline;
   align-self: center; }
 .made_life_text h3 {
   color: #222222;
