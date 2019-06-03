@@ -1,0 +1,142 @@
+body {
+	padding-top: 15px;
+}
+
+.navbar-header {
+	padding-bottom: 15px
+}
+
+.brand-home {
+	padding: 15px;
+	margin-left: 10px;
+}
+
+.btn-grey {
+	background-color: #D8D8D8;
+	color: #FFF;
+}
+
+.rating-block {
+	background-color: #FAFAFA;
+	border: 1px solid #EFEFEF;
+	padding: 15px 15px 20px 15px;
+	border-radius: 3px;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.padding-bottom-7 {
+	padding-bottom: 7px;
+}
+
+.review-block {
+	/* font-size:13px; */
+	background-color: #FAFAFA;
+	border: 1px solid #EFEFEF;
+	padding: 10px;
+	border-radius: 3px;
+	margin-bottom: 5px;
+}
+
+.review-block-name {
+	font-size: 12px;
+	margin: 10px 0;
+	font-style: italic;
+}
+
+.review-block-date {
+	font-size: 12px;
+	color: #777;
+	font-style: italic;
+}
+
+.review-block-stars {
+	/* font-size:13px; */
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.review-block-title {
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.review-block-description {
+	font-size: 14px;
+}
+
+.container {
+	overflow-y: auto;
+}
+
+.pagination>li>a, .pagination>li>span {
+	border-radius: 50% !important;
+	margin: 0 5px;
+}
+
+div.pagination-footer {
+	display: inline-block;
+	padding-top: 5px;
+	/*  border: 1px solid red; */
+}
+
+div.pagination-extend-buttons {
+	padding-left: 0;
+	/* margin: 29px 0; */
+	list-style: none;
+	padding-top: 5px;
+}
+
+span.pager-info {
+	color: dimgray;
+	font-style: italic;
+	padding-left: 10px;
+}
+
+.navbar-header>nav ul {
+  margin: 0;
+  padding-top:10px;
+  padding-bottom:5px;
+  list-style: none; 
+}
+.navbar-header .page-menu{
+	 padding:5px;
+}
+
+
+
+/* width */
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* background of the scrollbar except button or resizer */
+/* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #dfdcdc; 
+  border-radius: 10px;
+} */
+
+/* scrollbar itself */
+/* ::-webkit-scrollbar-thumb {
+  background: #afadad; 
+  border-radius: 10px;
+} */
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+	background: #797777;	
+} */
+
+/* .navbar-header>nav {    
+  display: block;
+  text-align: right;
+} */
+
+/* .navbar-toggler.my-toggler{
+cursor: pointer;
+} */
+
+

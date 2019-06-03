@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="Remain">
+<meta name="author" content="S.Taaouati">
+<!-- <link rel="icon" href="favicon.ico"> -->
+
+<!-- reviews css ================-->
+<link href="../css/reviews.css" rel="stylesheet" type="text/css">
+<link href="../css/font-awesome.min.css" rel="stylesheet"
+	type="text/css">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+
+<script data-require="moment.js@*" data-semver="2.24.0"
+	src="../js/moment.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="main-left col-md-4">
+				<div class="brand-home" >
+					<a href="../index.html"><img class="img-fluid" 
+						alt="Responsive image" src="../img/remain.png" alt=""></a>
+
+				</div>
+			</div>
+			<div class="main-middle col-md-6"
+				style="padding-left: 50px; padding-right: 50px;">
+				<div class="navbar-header">
+					<nav
+						class="navbar navbar-expand-lg navbar-light bg-light">
+						<div class="navbar-brand">
+							<span>Reviews</span><span class="pager-info"
+								id="title-reviews-count"></span>
+						</div>
+						<button class="navbar-toggler my-toggler" type="button"
+							data-toggle="collapse" data-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse"
+							id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active"><a href="../index.html">Home
+										<span class="sr-only">(current)</span>
+								</a></li>
+							</ul>
+							<div class="page-menu">
+								<span>Per page</span> <select id="page-selection"
+									onchange="handlePageLinkSelection()">
+									<option value="10">10</option>
+									<option value="20">20</option>
+									<option value="30">30</option>
+									<option value="40">40</option>
+									<option value="50">50</option>
+								</select>
+							</div>
+						</div>
+					</nav>
+				</div>
+
+				<!-- reviews -->
+				<div id="reviews"></div>
+
+				<!-- =====pagination==== -->
+				<div class="row" id="pager-container">
+					<div class="col-sm-7 pagination-footer" id="pager-footer">
+						<nav aria-label="Page navigation">
+							<ul class="pagination pager" id="myPager"></ul>
+						</nav>
+					</div>
+					<div class="col-sm-5 pagination-footer text-right">
+						<div class="pagination-extend-buttons">
+							<div style="display: inline-block;" id="page-buttons">
+								<input id="page-input" size="3" placeholder="page #">
+								<button onclick="handlePageInput()"
+									class="btn btn-primary btn-xs"
+									style="padding: 3px; margin-bottom: 3px;">Go</button>
+							</div>
+							<span class="pager-info" id="page-total"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-right col-md-2"></div>
+		</div>
+	</div>
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../js/axios.min.js"></script>
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/reviews.js"></script>
+</body>
+
+</html>
