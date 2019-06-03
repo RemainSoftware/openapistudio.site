@@ -1,10 +1,10 @@
 
 var numRatings;
-var pageSize = 10;
+var pageSize = 5;
 var visiblePagerLinks = 5;
 var numPages;
 var accessToken ='9e799575-9630-43a8-8fea-20cc5bf24f7e';
-// var host = "http://localhost:46003";
+ //var host = "http://localhost:46003";
  var host = "https://reg.openapi-studio.com"
 
 $(document).ready(function () {
@@ -13,7 +13,7 @@ $(document).ready(function () {
         .then(res => {
             var size = JSON.parse(JSON.stringify(res.data));
             numRatings = size;
-             getOrderdPageRatings(null, 0);
+            getOrderdPageRatings(null, 0);
             
             if(size==0){
              var buttons= document.getElementById("page-buttons");            
@@ -30,17 +30,6 @@ $(document).ready(function () {
         })
         .catch(error => console.log(error));
 
-    $(function () {
-        var window_height = $(window).height(),
-            content_height = window_height - 180;
-        $('.container').height(content_height);
-    });
-
-    $(window).resize(function () {
-        var window_height = $(window).height(),
-            content_height = window_height - 180;
-        $('.container').height(content_height);
-    });
 });
 
 function getOrderdPageRatings(creationDate, page) {
@@ -62,13 +51,9 @@ function getOrderdPageRatings(creationDate, page) {
             }
             if (creationDate == null) {
                 pager.data("0", null);
-                pager.data("1", ratings[ratings.length - 1].creation_date);
-                // $('#reviews').pageMe({ pagerSelector: '#myPager',
-				// showPrevNext: true, hidePageNumbers: false, perPage: pageSize
-				// });
+                pager.data("1", ratings[ratings.length - 1].creation_date);        
                 displayPager({ pagerSelector: '#myPager', showPrevNext: true, hidePageNumbers: false, perPage: pageSize });
             }
-
         })
         .catch(error => console.log(error));
 }
@@ -160,7 +145,6 @@ function displayTimeAgo(date) {
     return "";
 }
 
-// /$.fn.pageMe =
 function displayPager(opts) {
     var $this = this,
         defaults = {
@@ -178,9 +162,9 @@ function displayPager(opts) {
     }
     numPages = Math.ceil(numRatings / perPage);
 
-    // dispay info
+    // display info
     $("#page-total").text("Pages:" + (!numPages ? "-" : numPages));
-    $('#title-reviews-count').text((!numRatings ? "-" : numRatings));
+    $('#total-reviews').text((!numRatings ? "-" : numRatings));
 
     pager.data("curr", 0);
     if (settings.showPrevNext) {
