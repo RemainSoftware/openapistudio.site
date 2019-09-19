@@ -3,7 +3,7 @@ var numRatings;
 var pageSize = 5;
 var visiblePagerLinks = 5;
 var numPages;
-var accessToken ='9e799575-9630-43a8-8fea-20cc5bf24f7e';
+var accessToken ='ratings-access-token00-8fea-10cb5of24fsq';
  //var host = "http://localhost:46003";
  var host = "https://reg.openapi-studio.com"
 
