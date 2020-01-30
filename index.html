@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="icon" href="img/favicon.png" type="image/png">
+ <link rel="shortcut icon" href="https://reg.openapi-studio.com/images/favicon.ico" />
 <title>OpenAPI Devops Studio</title>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.css">
@@ -19,7 +19,7 @@
 <!-- main css -->
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -51,6 +51,8 @@
 						<ul class="nav navbar-nav menu_nav justify-content-center">
 							<li class="nav-item active"><a class="nav-link"
 								href="index.html">Home</a></li>
+						    <li class="nav-item"><a class="nav-link"
+								href="#pricing-section">Pricing</a></li>
 							<li class="nav-item"><a class="nav-link"
 								href="https://remainsoftware.com/openapi-studio-download">Download</a>
 							<li class="nav-item"><a class="nav-link"
@@ -268,7 +270,32 @@
 					</div>
 				</div>
 			</div>
-		</section> <!--===================== End reviews ========================--> <!--================Testimonials Area =================-->
+		</section> <!--===================== End reviews ========================--> 
+	
+		 <!--===================== Start pricing plans ========================--> 
+			<section class="reviews_area  p_120" id="pricing-section">			
+			<div class="main_title">
+					<h2>
+						Pricing Plans
+					</h2>
+				</div>
+            <div id="pricingHtmlContent" style="text-align:center;padding-bottom: 10px;"></div>
+      
+		<script>
+        $(function () {      
+            $.ajax({
+             url: `https://reg.openapi-studio.com/checkout/site/html/name/Default Template`
+            }).done((data) => {
+                document.getElementById("pricingHtmlContent").innerHTML = data.content;
+            })
+        });
+         </script>			
+			</section>
+		 <!--===================== End pricing plans ========================--> 
+		
+		
+		
+		<!--================Testimonials Area =================-->
 		<section class="testimonials_area p_120">
 			<div class="container">
 				<div class="main_title">
@@ -441,7 +468,7 @@
 						</div>
 						<div class="col-lg-6">
 							<div class="left_side_text">
-								<h3>We’ve made a life <br />that will change you</h3>
+								<h3>Weâ€™ve made a life <br />that will change you</h3>
 								<h6>We are here to listen from you deliver exellence</h6>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
 								<a class="main_btn" href="#">Get Started Now</a>
@@ -501,8 +528,8 @@
 				</div>
 			</div>
 		</footer> <!--================End Footer Area =================--> <!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS --> <script
-			src="js/jquery-3.2.1.min.js"></script> <script src="js/popper.js"></script>
+		<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+		 <script src="js/popper.js"></script>
 		<script src="js/bootstrap.min.js"></script> <script
 			src="js/stellar.js"></script> <script
 			src="vendors/lightbox/simpleLightbox.min.js"></script> <script
