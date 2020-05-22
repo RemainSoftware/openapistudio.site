@@ -5,7 +5,7 @@ var visiblePagerLinks = 5;
 var numPages;
 var accessToken ='ratings-access-token00-8fea-10cb5of24fsq';
  //var host = "http://localhost:46003";
- var host = "https://reg.openapi-studio.com"
+ var host = "https://apistudio.remainsoftware.com"
 
 $(document).ready(function () {
     axios.defaults.headers.common['access_token'] =accessToken;
@@ -168,7 +168,7 @@ function displayPager(opts) {
 
     pager.data("curr", 0);
     if (settings.showPrevNext) {
-        $('<li class="page-item"><a href="#" class="page-link prev_link">«</a></li>').appendTo(pager);
+        $('<li class="page-item"><a href="#" class="page-link prev_link">Â«</a></li>').appendTo(pager);
     }
 
     var curr = 0;
@@ -182,7 +182,7 @@ function displayPager(opts) {
     }
 
     if (settings.showPrevNext) {
-        $('<li class="page-item"><a href="#" class="page-link next_link">»</a></li>').appendTo(pager);
+        $('<li class="page-item"><a href="#" class="page-link next_link">Â»</a></li>').appendTo(pager);
     }
 
     pager.find('.num-link:first').addClass('active');
